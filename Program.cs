@@ -1,5 +1,6 @@
 // Program.cs
 using System;
+using System.Text;
 
 namespace TallerPetCare
 {
@@ -7,6 +8,8 @@ namespace TallerPetCare
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            Console.InputEncoding = Encoding.UTF8;
             Console.WriteLine("=========================================");
             Console.WriteLine(" PETCARE - DEMOSTRACION DE FUNCIONAMIENTO");
             Console.WriteLine("=========================================\n");
