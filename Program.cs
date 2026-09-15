@@ -10,7 +10,6 @@ namespace TallerPetCare
             Console.WriteLine(" PETCARE - DEMOSTRACION DE FUNCIONAMIENTO");
             Console.WriteLine("=========================================\n");
 
-            // ---------------- FARMACIA ----------------
             Console.WriteLine("### FARMACIA ###\n");
 
             Producto p1 = new Producto("MED-0142", "Frontline Plus", "pipeta 1.5 ml",
@@ -39,7 +38,6 @@ namespace TallerPetCare
             bool ventaNegativa = p1.Vender(-5);
             Console.WriteLine($"Intento de vender -5 unidades de p1: {(ventaNegativa ? "exitosa (ERROR)" : "rechazada, como se esperaba")}. Stock sigue en: {p1.Stock}");
 
-            // ---------------- RECEPCION ----------------
             Console.WriteLine("\n\n### RECEPCION ###\n");
 
             Consulta c1 = new Consulta("C-1001", "Firulais", "1128457963", "Dra. Gomez",
@@ -66,7 +64,6 @@ namespace TallerPetCare
             bool cancelarDobleVez = c3.Cancelar();
             Console.WriteLine($"Intento de cancelar c3 otra vez: {(cancelarDobleVez ? "exitoso (ERROR)" : "rechazado, como se esperaba")}");
 
-            // ---------------- HOSPITALIZACION ----------------
             Console.WriteLine("\n\n### HOSPITALIZACION ###\n");
 
             Jaula j1 = new Jaula("J-07", "pequena", 25000m);
@@ -96,7 +93,6 @@ namespace TallerPetCare
             j3.SumarDia();
             Console.WriteLine($"Intento de sumar un dia a j3 (disponible): dias sigue en {j3.DiasEstancia} (se esperaba 0)");
 
-            // ---------------- RESUMEN FINAL ----------------
             Console.WriteLine("\n\n=========================================");
             Console.WriteLine(" RESUMEN FINAL");
             Console.WriteLine("=========================================\n");
