@@ -1,0 +1,30 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+*.db
+*.log
+*.vspscc
+*.vssscc
+_ReSharper*/
+*.DotSettings.user
+*.ncrunch*
+*.ide
+*.cache
+*.DS_Store
+*.zip
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Build results
+/dist/
